@@ -44,3 +44,8 @@ pod package TTTAttributedLabel.podspec.json --force
 
 echo 'Building Numbus/PagingScrollView'
 pod package Nimbus.podspec.json --subspecs=PagingScrollView --force
+
+echo 'Downloading AWS SDK'
+wget -N http://sdk-for-ios.amazonwebservices.com/latest/aws-ios-sdk.zip
+echo 'extracting'
+unzip -q aws-ios-sdk.zip || exit 1
