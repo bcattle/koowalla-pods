@@ -1,4 +1,11 @@
 #!/bin/sh
+
+# TODO: add notification if there are new versions 
+# you can get the latest version with 
+#    pod repo update
+#    pod list | grep "^\\s*CocoaLumberjack" 
+
+
 echo 'Fetching podspec files'
 
 wget -qN https://raw.githubusercontent.com/CocoaPods/Specs/master/Specs/CocoaLumberjack/2.0.0-beta4/CocoaLumberjack.podspec.json
