@@ -22,6 +22,8 @@ wget -qN https://raw.githubusercontent.com/CocoaPods/Specs/master/Specs/TTTAttri
 echo '.\c'
 wget -qN https://raw.githubusercontent.com/CocoaPods/Specs/master/Specs/Nimbus/1.2.0/Nimbus.podspec.json
 echo '.\c'
+wget -qN https://raw.githubusercontent.com/CocoaPods/Specs/master/Specs/OCMock/3.1.1/OCMock.podspec.json 
+echo '.\c'
 echo ''
 
 echo 'Building CocoaLumberjack'
@@ -44,6 +46,9 @@ pod package TTTAttributedLabel.podspec.json --force
 
 echo 'Building Numbus/PagingScrollView'
 pod package Nimbus.podspec.json --subspecs=PagingScrollView --force
+
+echo 'Building OCMock'
+pod package OCMock.podspec.json --force
 
 echo 'Downloading AWS SDK'
 wget -N http://sdk-for-ios.amazonwebservices.com/latest/aws-ios-sdk.zip
