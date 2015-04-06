@@ -1,2 +1,10 @@
 *.json
 *~
+AFNetworking*/
+Mantle*/
+SDWebImage*/
+PromiseKit*/
+Nimbus*/
+OCMock*/
+TTTAttributedLabel*/
+aws-ios-sdk*
