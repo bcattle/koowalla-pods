@@ -14,6 +14,10 @@ echo 'Fetching podspec files'
 #echo '.\c'
 #wget -qN https://raw.githubusercontent.com/CocoaPods/Specs/master/Specs/CocoaLumberjack/2.0.0-beta4/CocoaLumberjack.podspec.json
 #echo '.\c'
+#wget -qN https://raw.githubusercontent.com/CocoaPods/Specs/master/Specs/GPUImage/0.1.6/GPUImage.podspec.json
+#echo '.\c'
+wget -qN https://raw.githubusercontent.com/CocoaPods/Specs/master/Specs/Raven/1.0.1/Raven.podspec.json
+echo '.\c'
 wget -qN https://raw.githubusercontent.com/CocoaPods/Specs/master/Specs/Mantle/1.5.1/Mantle.podspec.json
 echo '.\c'
 wget -qN https://raw.githubusercontent.com/CocoaPods/Specs/master/Specs/AFNetworking/2.5.0/AFNetworking.podspec.json
@@ -45,6 +49,12 @@ pod setup
 
 #echo 'Building CocoaLumberjack'
 #pod package CocoaLumberjack.podspec.json --force || exit 1
+
+#echo 'Building GPUImage'
+#pod package GPUImage.podspec.json --force || exit 1
+
+echo 'Building Raven'
+pod package Raven.podspec.json --force || exit 1
 
 echo 'Building Mantle'
 pod package Mantle.podspec.json --force || exit 1
